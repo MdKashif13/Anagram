@@ -6,8 +6,7 @@ nwlst=[]
 for x in lst:
 	nwlst.append(x.replace("\n",""))
 while True:
-	word=(input(">>"))
-	word=word.lower()
+	word=(input(">>").lower())
 	for a in range(len(nwlst)):
 		if len(word)==len(nwlst[a]):
 			if sorted(word)==sorted(nwlst[a]):
